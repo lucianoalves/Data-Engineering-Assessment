@@ -35,3 +35,10 @@ services:
     command: ["./example.R"]
     volumes:
       - ./data:/data
+
+  population-python:
+      image: population-python
+      build: images/population-python
+      command: ["./population.py"]
+      volumes:
+        - ./data:/data
